@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Hi there, I'm Akarsh 👋
 
 [Website](https://uakarsh.github.io/AkarshU/)
@@ -73,3 +74,7 @@ Upload these projects to your google drive, and then follow the instructions tha
 [instagram]: https://www.instagram.com/rutvik_iam/?hl=en
 [linkedin]: https://www.linkedin.com/in/akarsh-upadhyay-50ba7518b/
 [kaggle]: https://www.kaggle.com/akarshu121
+=======
+# speech-recognition
+This repository contains the code for the model and the deployment for the same in Flask
+>>>>>>> cea526587f7175ce1fcbeb6e4003254ece4e1cdf
