@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 from base64 import b64decode, b64encode
 from speech import prediction
-from playsound import playsound
+#from playsound import playsound
 app = Flask(__name__)
 
 
@@ -17,7 +17,7 @@ def predict():
         decoded = b64decode(b64string)
         with open("temp.wav", 'wb') as file:
             file.write(decoded)
-        playsound('temp.wav')
+        #playsound('temp.wav')
         return jsonify({
             "The keyword in the audio is:": prediction('temp.wav'),
         })
