@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from base64 import b64decode, b64encode
 from speech import prediction
 #from playsound import playsound
@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'This is Home Page!'
+    return render_template('index.html')
 
 
 @app.route('/predict', methods=['POST'])
