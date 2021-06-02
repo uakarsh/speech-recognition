@@ -10,7 +10,7 @@ def prediction(x):
     samples = librosa.resample(sample,samples_rate,8000)
     samples = np.expand_dims(samples,axis=0).reshape(-1,1)
     query=np.expand_dims(samples,axis=0)
-    print("The shape of samples is:",query.shape)
+    #print("The shape of samples is:",query.shape)
     label = 'aeka'
     label = target_list[np.argmax(model.predict(query))]
     return label
