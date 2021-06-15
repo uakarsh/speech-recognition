@@ -17,6 +17,7 @@ def predict():
         decoded = b64decode(b64string)
         with open("temp.wav", 'wb') as file:
             file.write(decoded)
+        
         #playsound('temp.wav')
         return jsonify({
             "The keyword in the audio is:": prediction('temp.wav'),

@@ -67,6 +67,9 @@
       <br />
       <br />
       <br />
+      <div class="form-group">
+          <% = f.hidden_field: avatar_url,class = "simple-class-upload"%>
+      </div>
       <input type="file" onchange="openFile(event)" />
       <br />
       <form action="http://127.0.0.1:3333/predict" method="POST">
