@@ -1,4 +1,3 @@
-=
 ## About the Project:
 
 Problem : Speech Recognition (Keyword Spotting)

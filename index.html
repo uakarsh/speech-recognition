@@ -46,7 +46,7 @@
 
       <div class="profile">
         <img src="assets/img/dreamstime_xxl_133318648-768x461.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Speech Recognition</a></h1>
+        <h1 class="text-light"><a href="index.html">Medical Text Classification</a></h1>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
@@ -60,16 +60,13 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Speech Recognition</h1>
-      <p>Maybe <span class="typed" data-typed-items="Keyword Spotting, Speech to Text, Machine Translation, something more"></span></p>
-      Submit Your Wav File
+      <h1>Clinical Text Classification</h1>
+      <p>Maybe <span class="typed" data-typed-items="Keyword Spotting,something more"></span></p>
+      <h6 style="color:white;">Your Text File</h6> 
       <br />
       <br />
       <br />
       <br />
-      <div class="form-group">
-          <% = f.hidden_field: avatar_url,class = "simple-class-upload"%>
-      </div>
       <input type="file" onchange="openFile(event)" />
       <br />
       <form action="http://127.0.0.1:3333/predict" method="POST">

@@ -15,12 +15,12 @@ def predict():
     if(request.method == 'POST'):
         b64string = request.form['base64data']
         decoded = b64decode(b64string)
-        with open("temp.wav", 'wb') as file:
+        with open("temp.txt", 'wb') as file:
             file.write(decoded)
         
         #playsound('temp.wav')
         return jsonify({
-            "The keyword in the audio is:": prediction('temp.wav'),
+            "The medical prediction in the text is:": prediction('temp.txt'),
         })
 
 
